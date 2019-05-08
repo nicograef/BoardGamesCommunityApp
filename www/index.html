@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <title>Games App</title>
+  <link rel="stylesheet" href="css/framework7.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/app.css">
+  <!-- <link rel="stylesheet" href="css/ci.css"> -->
+</head>
+
+<body>
+  <!-- App root element -->
+  <div id="app" class="color-theme-green">
+    <!-- Statusbar overlay -->
+    <div class="statusbar"></div>
+
+    <!-- Left panel -->
+    <div class="panel panel-left panel-reveal">
+      <div class="view">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="title">Menu</div>
+          </div>
+        </div>
+        <div class="page">
+
+          <div class="page-content">
+            <div class="list links-list">
+              <ul>
+                <li>
+                  <a href="/home/" data-view=".view-main" class="panel-close"><i class="fa fa-home"></i>Home</a>
+                </li>
+              </ul>
+            </div>
+            <div class="block-title">Groups</div>
+            <div class="list links-list">
+              <ul>
+                <li>
+                  <a href="/find-group/" data-view=".view-main" class="panel-close"><i class="fa fa-search"></i>Find Group</a>
+                </li>
+                <li>
+                  <a href="/create-group/" data-view=".view-main" class="panel-close"><i class="fa fa-plus"></i>Create Group</a>
+                </li>
+                <li>
+                  <a href="/my-groups/" data-view=".view-main" class="panel-close"><i class="fa fa-users"></i>My Groups</a>
+                </li>
+              </ul>
+            </div>
+            <div class="block-title">User</div>
+            <div class="list links-list">
+              <ul>
+                <li>
+                  <a href="#" data-view=".view-main" class="panel-close"><i class="fa fa-user"></i>Profile</a>
+                </li>
+                <li>
+                  <a href="#" data-view=".view-main" class="panel-close"><i class="fa fa-handshake-o"></i>Friends</a>
+                </li>
+                <li>
+                  <a href="#" data-view=".view-main" class="panel-close"><i class="fa fa-sliders"></i>Settings</a>
+                </li>
+                <!-- <li>
+                  <a href="#" data-view=".view-main" class="panel-close">Log Out</a>
+                </li> -->
+                <li>
+                  <a href="#" data-view=".view-main" class="panel-close login-screen-open" data-login-screen=".login-screen"><i class="fa fa-sign-in"></i>Log In</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Your main view, should have "view-main" class -->
+    <div class="view view-main">
+      <!-- Initial Page, "data-name" contains page name -->
+      <div class="page" data-name="home">
+
+        <!-- Top Navbar -->
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="left">
+              <a href="#" data-panel="left" class="link icon-only panel-open">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+            <div class="title">Games App</div>
+          </div>
+        </div>
+
+        <div class="page-content">
+
+          <div class="card demo-card-header-pic">
+            <div style="background-image:url(img/home/blog-post.jpg)" class="card-header align-items-flex-end">Rise of the Board Games</div>
+            <div class="card-content card-content-padding">
+              <p class="date">Posted on January 11, 2018</p>
+              <p>We may now live in a world of Facebook, Pokémon Go, Netflix and iPads, but board-gaming is booming. Even the early 20th-century games explosion, which gave us such hardy perennials as Monopoly, Cluedo and Scrabble, has nothing on the current surge.</p>
+            </div>
+            <div class="card-footer"><a href="#" class="link">Like</a><a href="/blog-post/" data-view=".view-main" class="link">Read more</a></div>
+          </div>
+
+          <div class="card demo-facebook-card">
+            <div class="card-header">
+              <div class="demo-facebook-avatar"><img src="img/home/john-doe.jpg" width="34" height="34" /></div>
+              <div class="demo-facebook-name">John Doe</div>
+              <div class="demo-facebook-date">Monday at 2:15 PM</div>
+            </div>
+            <div class="card-content card-content-padding">
+              <p>It's monopoly time!</p><img src="img/home/social-post-1.jpg" width="100%" />
+            </div>
+            <div class="card-footer"><a href="#" id="like" class="link">Like</a><a href="#" class="link">Comment</a><a href="#" class="link">Share</a></div>
+          </div>
+
+          <div class="card">
+            <div class="card-header"><i class="fa fa-user-plus"></i>New Member</div>
+            <div class="card-content card-content-padding">
+              Juliane Stäuble joined your group <i>Monopoly Freiburg</i>.
+            </div>
+            <div class="card-footer">Groups | January 07, 2018</div>
+          </div>
+
+          <div class="card">
+            <div class="card-header"><i class="fa fa-plus"></i>New Group</div>
+            <div class="card-content card-content-padding">
+              You created a new group called <i>Gesellschaftsspiele in Freiburg</i>.
+            </div>
+            <div class="card-footer">Groups | January 05, 2018</div>
+          </div>
+
+          <div class="card">
+            <div class="card-header"><i class="fa fa-star"></i>Game Added to Favorites</div>
+            <div class="card-content card-content-padding">
+              You added the game <i>American Football</i> to your favorites.
+            </div>
+            <div class="card-footer">Groups | January 04, 2018</div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Login Screen -->
+    <div class="login-screen" id="my-login-screen">
+      <div class="view">
+        <div class="page">
+          <div class="page-content login-screen-content">
+            <div class="login-screen-title">Login</div>
+            <div class="list">
+              <ul>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Username</div>
+                    <div class="item-input-wrap">
+                      <input type="text" name="username" placeholder="Your username">
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Password</div>
+                    <div class="item-input-wrap">
+                      <input type="password" name="password" placeholder="Your password">
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="list">
+              <ul>
+                <li>
+                  <a href="#" class="item-link list-button login-screen-close">Log In</a>
+                </li>
+                <li>
+                  <a href="/create-profile/" data-view=".view-main" class="item-link list-button login-screen-close">Create a profile</a>
+                </li>
+              </ul>
+              <div class="block-footer">Please read our general terms before creating your profile.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Path to Cordova-->
+  <script type="text/javascript" src="cordova.js"></script>
+  <!-- Path to Framework7 Library JS-->
+  <script type="text/javascript" src="js/framework7.min.js"></script>
+  <!-- Path to your app js-->
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>

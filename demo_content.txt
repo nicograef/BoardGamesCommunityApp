@@ -1,0 +1,19 @@
+create profile
+-----------------
+Allison Long
+allison.long85@gmail.com
+not1234
+not1234
+female
+9/2/1985
+Freiburg
+Outside Games
+
+
+create group
+-------------
+Board Games Freiburg
+For passionate board gamers from Freiburg
+Private
+Gender Both
+8 Number of players

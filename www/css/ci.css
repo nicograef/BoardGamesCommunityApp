@@ -1,0 +1,38 @@
+.dark {
+  color: SeaGreen !important;
+}
+
+.item-input-field.focus-state::after {
+  background: SeaGreen !important;
+}
+
+.navbar, .subnavbar, .toolbar, .statusbar-overlay {
+  background: SeaGreen;
+  color: White;
+}
+.navbar a { color: White; }
+
+.button, a, .list-block .list-button {
+  border-color: SeaGreen;
+  color: SeaGreen;
+}
+
+.layout-dark .list-block .list-button {
+  color: White;
+}
+
+.badge {
+  background: SeaGreen;
+  font-size: inherit;
+}
+
+.form-checkbox input[type=checkbox]:checked~i,
+label.label-checkbox input[type=checkbox]:checked+.item-media i.icon-form-checkbox,
+label.label-checkbox input[type=checkbox]:checked~.item-after i.icon-form-checkbox,
+label.label-checkbox input[type=checkbox]:checked~.item-inner i.icon-form-checkbox,
+label.label-checkbox input[type=radio]:checked+.item-media i.icon-form-checkbox,
+label.label-checkbox input[type=radio]:checked~.item-after i.icon-form-checkbox,
+label.label-checkbox input[type=radio]:checked~.item-inner i.icon-form-checkbox {
+  background-color: SeaGreen;
+  border-color: SeaGreen;
+}
